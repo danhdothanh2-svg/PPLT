@@ -1,0 +1,12 @@
+km = float(input("Enter number of kilometers: "))
+
+total_fare = 0
+
+if km <= 1:
+    total_fare = 15000
+elif km <= 20:
+    total_fare = 15000 + (km - 1) * 12000
+else:
+    total_fare = 15000 + 19 * 12000 + (km - 20) * 10000
+
+print("Total taxi fare:", int(total_fare), "VND")
